@@ -348,3 +348,8 @@ foreach(LIB Luau.Ast Luau.Compiler Luau.Config Luau.Analysis Luau.CodeGen Luau.V
         endif()
     endif()
 endforeach()
+
+# JNI Binding Library
+add_library(luau_jni SHARED cpp/jni.cpp)
+target_link_libraries(luau_jni PUBLIC Luau.Compiler Luau.VM)
+
