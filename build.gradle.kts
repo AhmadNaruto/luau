@@ -7,6 +7,7 @@ import com.android.build.api.dsl.LibraryExtension
 extensions.configure<LibraryExtension> {
     namespace = "io.github.luau_jni"
     compileSdk = 37
+    ndkVersion = "29.0.14206865"
 
     defaultConfig {
         minSdk = 26
